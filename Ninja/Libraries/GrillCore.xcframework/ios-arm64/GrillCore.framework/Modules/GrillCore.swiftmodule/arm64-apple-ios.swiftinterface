@@ -1,0 +1,781 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GrillCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreFoundation
+import Foundation
+@_exported import GrillCore
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+extension GrillCore.GrillCoreSDK {
+  @objc public class Grill : ObjectiveC.NSObject, GrillCore.MantleStructWrapper {
+    final public let dsn: Swift.String
+    final public let state: GrillCore.GrillCoreSDK.GrillState
+    required public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_Grill
+    public static func CType() -> GrillCore.GrillCore_Grill.Type
+    public func getName() -> Swift.String
+    #if compiler(>=5.3) && $AsyncAwait
+    public func setName(newName: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public func details() async -> GrillCore.MantleSDK.Result<GrillCore.GrillCoreSDK.GrillDetails>
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public func errors() async -> GrillCore.MantleSDK.Result<[GrillCore.GrillCoreSDK.GrillError]>
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public func delete() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public func factoryReset() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public func turnOff() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func setName(dsn: Swift.String, newName: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    public static func getLastCook() throws -> GrillCore.GrillCoreSDK.Cook?
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func stopCook() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func skipPreheat() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    public typealias CStruct = GrillCore.GrillCore_Grill
+    @objc deinit
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  public struct Cache {
+    public static func getCachedData(path: Swift.String, key: Swift.String) -> GrillCore.MantleSDK.Result<GrillCore.CloudCoreSDK.CacheDataValues>
+    @discardableResult
+    public static func setCachedData(path: Swift.String, key: Swift.String, data: GrillCore.CloudCoreSDK.CacheDataValues) -> GrillCore.MantleSDK.VoidResult
+    @discardableResult
+    public static func removeCachedData(path: Swift.String, key: Swift.String) -> GrillCore.MantleSDK.VoidResult
+  }
+}
+public protocol MantleStructWrapper {
+  associatedtype CStruct
+  init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+  func toCStruct() -> Self.CStruct
+  static func CType() -> Self.CStruct.Type
+}
+public struct MantleSDK {
+}
+@objc @_inheritsConvenienceInitializers public class CloudCoreSDK : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GrillCore.CloudCoreSDK {
+  public enum WifiPairingState : Swift.Int, GrillCore.MantleStructWrapper {
+    case Idle
+    case FetchingDSN
+    case DeviceScanningWifi
+    case GettingWifiNetworks
+    case SendingWiFiCredentialsToDevice
+    case EndingAccessPointsScanning
+    case PollingUserInternetConnection
+    case HandshakingWithAyla
+    case PollingDeviceOnAyla
+    case Connected
+    case Done
+    case Cancelling
+    public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.CloudCore_WifiPairingState
+    public static func CType() -> GrillCore.CloudCore_WifiPairingState.Type
+    public init?(rawValue: Swift.Int)
+    public typealias CStruct = GrillCore.CloudCore_WifiPairingState
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct WifiNetwork : GrillCore.MantleStructWrapper {
+    public let bars: Swift.UInt?
+    public let bssid: Swift.String?
+    public let chan: Swift.UInt?
+    public let security: Swift.String?
+    public let signal: Swift.Int?
+    public let ssid: Swift.String?
+    public let type: Swift.String?
+    public var password: Swift.String?
+    public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.CloudCore_WifiNetwork
+    public static func CType() -> GrillCore.CloudCore_WifiNetwork.Type
+    public typealias CStruct = GrillCore.CloudCore_WifiNetwork
+  }
+}
+@objc @_inheritsConvenienceInitializers public class GrillCoreSDK : ObjectiveC.NSObject {
+  public static func setup()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension GrillCore.GrillCoreSDK {
+  public class ProbePreset : Swift.Decodable {
+    public func getFoodPresets() -> [GrillCore.GrillCoreSDK.FoodPreset]
+    @objc deinit
+    required public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct TempDescription : Swift.Decodable {
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+public struct MantleList<LT> where LT : GrillCore.MantleStructWrapper {
+  public var list: [LT] {
+    get
+  }
+  public init(_ pointer: Swift.UnsafeRawPointer) throws
+}
+extension Swift.UnsafeRawPointer {
+  public func objects<T>(as type: T.Type, count: Swift.Int) throws -> [T] where T : GrillCore.MantleStructWrapper
+}
+extension Swift.Array {
+  public func getPointer() -> Swift.UnsafePointer<Element>?
+}
+extension Swift.Array where Element == Swift.String {
+  public func toCArray() -> [Swift.UnsafePointer<Swift.CChar>?]
+  public func toMantleList() -> GrillCore.Mantle_List
+}
+extension Swift.Array where Element : GrillCore.MantleStructWrapper {
+  public func toCStructArray() -> [Swift.UnsafePointer<Element.CStruct>?]
+  public func toMantleList() -> GrillCore.Mantle_List
+}
+extension Swift.Array where Element == Swift.UInt32 {
+  public func toCArray() -> [Swift.UnsafePointer<Swift.UInt32>?]
+  public func toMantleList() -> GrillCore.Mantle_List
+}
+extension Swift.Array where Element == Swift.UInt8 {
+  public func toCArray() -> [Swift.UnsafePointer<Swift.UInt8>?]
+  public func toMantleList() -> GrillCore.Mantle_List
+}
+extension Foundation.Data {
+  public func toUIntArray() -> GrillCore.Mantle_List
+}
+public struct MantleUIntList {
+  public var list: [Swift.UInt32] {
+    get
+  }
+  public init(_ pointer: Swift.UnsafeRawPointer) throws
+}
+public struct MantleUInt8List {
+  public var list: [Swift.UInt8] {
+    get
+  }
+  public init(_ pointer: Swift.UnsafeRawPointer) throws
+}
+extension Swift.UnsafeRawPointer {
+  public func intObjects(count: Swift.Int) throws -> [Swift.UInt32]
+  public func int8Objects(count: Swift.Int) throws -> [Swift.UInt8]
+}
+extension GrillCore.CloudCoreSDK {
+  public enum CacheDataValues {
+    case Str(Swift.String)
+    case Integer(Swift.Int)
+    case FloatOrDouble(Swift.Double)
+    case Boolean(Swift.Bool)
+    case Object([Swift.String : Any])
+    case Null
+    public func getString() -> Swift.String
+    public func getInt() -> Swift.Int
+    public func getFloatOrDouble() -> Swift.Double
+    public func getBoolean() -> Swift.Bool
+    public func getDictionary() -> [Swift.String : Any]
+    public func getObject<T>(type: T.Type) -> T? where T : GrillCore.Serializable
+  }
+}
+extension GrillCore.CloudCoreSDK.CacheDataValues : GrillCore.MantleStructWrapper {
+  public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+  public func toCStruct() -> GrillCore.Cache_Data_Value
+  public static func CType() -> GrillCore.Cache_Data_Value.Type
+  public typealias CStruct = GrillCore.Cache_Data_Value
+}
+extension GrillCore.GrillCoreSDK {
+  @objc public class FoodPreset : ObjectiveC.NSObject, GrillCore.MantleStructWrapper {
+    final public let presetIndex: Swift.UInt
+    final public let temp: Swift.UInt
+    final public let tempDescription: Swift.String
+    required public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public init(presetIndex: Swift.UInt, temp: Swift.UInt, tempDescription: Swift.String)
+    public func toCStruct() -> GrillCore.GrillCore_FoodPreset
+    public static func CType() -> GrillCore.GrillCore_FoodPreset.Type
+    public typealias CStruct = GrillCore.GrillCore_FoodPreset
+    @objc deinit
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  public enum BTCommand : Swift.String, Swift.Codable {
+    case None
+    case Connect
+    case Disconnect
+    case ConnectStatus
+    case Send
+    case Receive
+    case RSSI
+    case ServiceParams
+    case StartScan
+    case StopScan
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @objc @_inheritsConvenienceInitializers public class BTPayload : ObjectiveC.NSObject, Swift.Codable {
+    public var cmd: GrillCore.GrillCoreSDK.BTCommand
+    public var id: Swift.String
+    public var data: Foundation.Data
+    @objc override dynamic public init()
+    public init(cmd: GrillCore.GrillCoreSDK.BTCommand, id: Swift.String, data: Foundation.Data)
+    required public init(from decoder: any Swift.Decoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    @objc deinit
+  }
+  public struct BTJoinableGrill : Swift.Codable {
+    public let uuid: Swift.String
+    public let mac: Swift.String
+    public let rssi: Swift.Int
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BTManager : ObjectiveC.NSObject {
+    public static let shared: GrillCore.GrillCoreSDK.BTManager
+    @objc dynamic public var btAppRequest: GrillCore.GrillCoreSDK.BTPayload
+    public func processAdvertisementData(uuid: Swift.String, data: Foundation.Data, rssi: Swift.Int)
+    #if compiler(>=5.3) && $AsyncAwait
+    public func sendBTPayload(_ payload: GrillCore.GrillCoreSDK.BTPayload) async
+    #endif
+    public func setBTAvailable(_ available: Swift.Bool)
+    public func getMac(uuid: Swift.String) -> Swift.String
+    public func decryptData(uuid: Swift.String, data: Foundation.Data) -> Foundation.Data
+    public func encryptData(uuid: Swift.String, data: Foundation.Data) -> Foundation.Data
+    public func joinableGrills() -> [GrillCore.GrillCoreSDK.BTJoinableGrill]
+    @objc deinit
+  }
+}
+public protocol Serializable : Swift.Decodable, Swift.Encodable {
+}
+extension GrillCore.Serializable {
+  public func convertToDictionary() -> [Swift.String : Any]
+}
+extension Swift.UnsafeRawPointer {
+  public func object<T>(as type: T.Type, clearPointer: Swift.Bool = true) -> T
+}
+extension Swift.Int32 {
+  public func toCInt(clear: Swift.Bool = true) -> Swift.UnsafePointer<Swift.Int32>
+}
+extension Swift.UInt32 {
+  public func toCUInt(clear: Swift.Bool = true) -> Swift.UnsafePointer<Swift.UInt32>
+}
+extension Swift.UInt8 {
+  public func toCUInt(clear: Swift.Bool = true) -> Swift.UnsafePointer<Swift.UInt8>
+}
+extension Swift.Double {
+  public func toCDouble(clear: Swift.Bool = true) -> Swift.UnsafePointer<Swift.Double>
+}
+extension Swift.Bool {
+  public func toCBoolean(clear: Swift.Bool = true) -> Swift.UnsafePointer<Swift.Bool>
+}
+extension Swift.String {
+  public func toCString() -> Swift.UnsafePointer<Swift.CChar>
+}
+extension Swift.Optional where Wrapped == Swift.String {
+  public func toCString() -> Swift.UnsafePointer<Swift.CChar>?
+}
+extension Swift.UnsafePointer where Pointee == Swift.Int8 {
+  public func toString() -> Swift.String
+}
+extension Swift.Optional where Wrapped == Swift.Int {
+  public func toCInt() -> Swift.UnsafePointer<Swift.Int32>?
+}
+extension Swift.Optional where Wrapped == Swift.UInt {
+  public func toCUInt() -> Swift.UnsafePointer<Swift.UInt32>?
+}
+extension Swift.Optional where Wrapped == Swift.UnsafePointer<Swift.Int8> {
+  public func optionalString() -> Swift.String?
+}
+extension Swift.Optional where Wrapped == Swift.UnsafePointer<Swift.UInt32> {
+  public func optionalUInt() -> Swift.UInt?
+}
+extension Swift.Optional where Wrapped == Swift.UnsafePointer<Swift.Int32> {
+  public func optionalInt() -> Swift.Int?
+}
+extension Swift.Optional where Wrapped == Swift.UnsafePointer<Swift.UInt32> {
+  public func optionalUInt32() -> Swift.UInt32?
+}
+extension Swift.Optional where Wrapped == Swift.UnsafePointer<Swift.Int32> {
+  public func optionalInt32() -> Swift.Int32?
+}
+extension Swift.Optional where Wrapped == Swift.UnsafePointer<Swift.Bool> {
+  public func optionalBool() -> Swift.Bool?
+}
+extension Swift.Optional {
+  public func optionalPointer(clear: Swift.Bool = true) -> Swift.UnsafePointer<Wrapped>
+}
+extension GrillCore.GrillCoreSDK {
+  public struct User {
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func confirmAccount(token: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func confirmAccountRequest(email: Swift.String, emailTemplateId: Swift.String? = nil, emailSubject: Swift.String? = nil, emailBodyHTML: Swift.String? = nil) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func create(password: Swift.String, email: Swift.String, emailTemplateId: Swift.String? = nil, emailSubject: Swift.String? = nil, emailBodyHTML: Swift.String? = nil) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func delete() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    public static func getUsername() -> GrillCore.MantleSDK.Result<Swift.String>
+    public static func getUUID() -> GrillCore.MantleSDK.Result<Swift.String>
+    public static func getAccessToken() -> GrillCore.MantleSDK.Result<Swift.String>
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func login(email: Swift.String, password: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func refreshSession() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func logout() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    public static func loggedIn() -> Swift.Bool
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func requestPasswordReset(email: Swift.String, emailTemplateId: Swift.String? = nil, emailSubject: Swift.String? = nil, emailBodyHTML: Swift.String? = nil) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func resetPassword(token: Swift.String, password: Swift.String, passwordConfirmation: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func resetUserPassword(currentPassword: Swift.String, newPassword: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func updateEmail(newEmail: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  public struct GrillDetails : GrillCore.MantleStructWrapper {
+    public let serialNumber: Swift.String
+    public let modelNumber: Swift.String
+    public let dsn: Swift.String
+    public let mac: Swift.String
+    public let firmwareVersion: Swift.String
+    public let otaFirmwareVersion: Swift.String
+    public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_Grill_Details
+    public static func CType() -> GrillCore.GrillCore_Grill_Details.Type
+    public typealias CStruct = GrillCore.GrillCore_Grill_Details
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GrillManager : ObjectiveC.NSObject {
+    public static let shared: GrillCore.GrillCoreSDK.GrillManager
+    @objc dynamic public var selectedGrillState: GrillCore.GrillCoreSDK.GrillState
+    @objc dynamic public var liveGrills: [GrillCore.GrillCoreSDK.Grill]
+    public var grills: [GrillCore.GrillCoreSDK.Grill] {
+      get
+    }
+    public var currentGrill: GrillCore.GrillCoreSDK.Grill? {
+      get
+      set
+    }
+    #if compiler(>=5.3) && $AsyncAwait
+    public func fetchGrills() async -> GrillCore.MantleSDK.Result<[GrillCore.GrillCoreSDK.Grill]>
+    #endif
+    @objc deinit
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  @objc public class Cook : ObjectiveC.NSObject, GrillCore.MantleStructWrapper {
+    final public let canSmoke: Swift.Bool
+    final public let cookType: GrillCore.GrillCoreSDK.CookType
+    final public let duration: Swift.UInt?
+    final public let smoke: Swift.Bool
+    final public let mode: GrillCore.GrillCoreSDK.CookMode
+    final public let probe0: GrillCore.GrillCoreSDK.CookProbe?
+    final public let probe1: GrillCore.GrillCoreSDK.CookProbe?
+    final public let temp: Swift.UInt?
+    required public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_Cook
+    public static func CType() -> GrillCore.GrillCore_Cook.Type
+    public static func new() throws -> GrillCore.GrillCoreSDK.Cook
+    public static func getCookModesUS() -> [GrillCore.GrillCoreSDK.CookMode]
+    public static func getAvailableTemps(cookMode: GrillCore.GrillCoreSDK.CookMode) -> [Swift.UInt32]
+    public static func getAvailableTempsUnit(cookMode: GrillCore.GrillCoreSDK.CookMode) -> Swift.String
+    public static func getAvailableTimes(cookMode: GrillCore.GrillCoreSDK.CookMode) -> [Swift.UInt32]
+    public static func getAvailableTimesUnit(cookMode: GrillCore.GrillCoreSDK.CookMode) -> Swift.String
+    public static func getDefaultTemp(cookMode: GrillCore.GrillCoreSDK.CookMode) -> Swift.UInt32
+    public static func getDefaultTime(cookMode: GrillCore.GrillCoreSDK.CookMode) -> Swift.UInt32
+    public func setCookMode(cookMode: GrillCore.GrillCoreSDK.CookMode) throws -> GrillCore.GrillCoreSDK.Cook
+    public func setCookTypeTimed(temp: Swift.Int) throws -> GrillCore.GrillCoreSDK.Cook
+    public func setDuration(time: Swift.Int) throws -> GrillCore.GrillCoreSDK.Cook
+    public func setSmoke(smoke: Swift.Bool) throws -> GrillCore.GrillCoreSDK.Cook
+    public func setProbe0Manual(temp: Swift.Int) throws -> GrillCore.GrillCoreSDK.Cook
+    public func setProbe0Preset(food: GrillCore.GrillCoreSDK.Food, presetIndex: Swift.Int) throws -> GrillCore.GrillCoreSDK.Cook
+    public func setProbe1Manual(temp: Swift.Int) throws -> GrillCore.GrillCoreSDK.Cook
+    public func setProbe1Preset(food: GrillCore.GrillCoreSDK.Food, presetIndex: Swift.Int) throws -> GrillCore.GrillCoreSDK.Cook
+    public func setTemp(temp: Swift.Int) throws -> GrillCore.GrillCoreSDK.Cook
+    public func sync() throws -> GrillCore.MantleSDK.VoidResult
+    public static func getFoodPresets(food: GrillCore.GrillCoreSDK.Food) -> [GrillCore.GrillCoreSDK.FoodPreset]
+    public static func getAvailableFoods() -> [GrillCore.GrillCoreSDK.Food]
+    public static func getProbePresets() -> [GrillCore.GrillCoreSDK.ProbePreset]
+    public typealias CStruct = GrillCore.GrillCore_Cook
+    @objc deinit
+  }
+}
+extension GrillCore.Mantle_Result {
+  public func objectResult<T>(as type: T.Type) -> GrillCore.MantleSDK.Result<T> where T : GrillCore.MantleStructWrapper
+  public func listResult<T>(as type: T.Type) -> GrillCore.MantleSDK.Result<[T]> where T : GrillCore.MantleStructWrapper
+  public func voidResult() -> GrillCore.MantleSDK.VoidResult
+  public func stringResult() -> GrillCore.MantleSDK.Result<Swift.String>
+  public func boolResult() -> GrillCore.MantleSDK.Result<Swift.Bool>
+}
+extension GrillCore.MantleSDK {
+  public typealias VoidResult = GrillCore.MantleSDK.Result<()>
+  public enum AnyResult {
+    case success(Any)
+    case fail(any Swift.Error)
+    public func to<Typed>(type: Typed.Type) -> GrillCore.MantleSDK.Result<Typed>
+  }
+  public enum Result<T> {
+    case success(T)
+    case fail(any Swift.Error)
+    public func anyResult() -> GrillCore.MantleSDK.AnyResult
+    @discardableResult
+    public func onSuccess(action: (T) -> ()) -> GrillCore.MantleSDK.Result<T>
+    @discardableResult
+    public func onFailure(action: (any Swift.Error) -> ()) -> GrillCore.MantleSDK.Result<T>
+    public func unwrapOrNil() -> T?
+    public func unwrapOrFallback(fallback: T) -> T
+    @discardableResult
+    public func unwrapOrThrow() throws -> T
+  }
+}
+extension GrillCore.MantleSDK {
+  public enum Error : Swift.Error, Swift.CustomStringConvertible {
+    case nullPointer
+    case failure(reason: Swift.String)
+    public var description: Swift.String {
+      get
+    }
+  }
+}
+extension GrillCore.MantleSDK {
+  public struct MantleError : Swift.Error, GrillCore.MantleStructWrapper, Swift.CustomStringConvertible {
+    public let errorType: Swift.String
+    public let description: Swift.String
+    public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool = true) throws
+    public func toCStruct() -> GrillCore.Mantle_Error_FFI
+    public static func CType() -> GrillCore.Mantle_Error_FFI.Type
+    public typealias CStruct = GrillCore.Mantle_Error_FFI
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  public struct WifiManager {
+    public static var wifiNetworksCallback: (([GrillCore.CloudCoreSDK.WifiNetwork]) -> ())?
+    public static var stateCallback: ((GrillCore.CloudCoreSDK.WifiPairingState) -> ())?
+    public static var resultCallback: ((GrillCore.MantleSDK.Result<Swift.String>) -> ())?
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func startPairing(ipAddress: Swift.String) async
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func cancelPairing() async
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func continuePairing() async
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func registerDevice(dsn: Swift.String, setupToken: Swift.String) async
+    #endif
+    public static func pairingState() -> GrillCore.CloudCoreSDK.WifiPairingState
+    public static func setNetwork(network: GrillCore.CloudCoreSDK.WifiNetwork)
+    @discardableResult
+    public static func writeToPairingLog(_ content: Swift.String) -> GrillCore.MantleSDK.VoidResult
+    public static func readPairingLog() -> GrillCore.MantleSDK.Result<Swift.String>
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  public enum Food : Swift.Int, Swift.Codable {
+    case Beef, Chicken, Fish, Pork, Manual, NotSet
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum ProbeMode : Swift.Int {
+    case Manual, Preset, NotSet
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public class CookProbe : ObjectiveC.NSObject, GrillCore.MantleStructWrapper {
+    final public let temp: Swift.UInt?
+    final public let food: GrillCore.GrillCoreSDK.Food
+    final public let presetIndex: Swift.UInt?
+    final public let probeMode: GrillCore.GrillCoreSDK.ProbeMode
+    required public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_CookProbe
+    public static func CType() -> GrillCore.GrillCore_CookProbe.Type
+    public typealias CStruct = GrillCore.GrillCore_CookProbe
+    @objc deinit
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  public struct GrillError : GrillCore.MantleStructWrapper {
+    public let code: Swift.Int
+    public let date: Foundation.Date
+    public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_Grill_Error
+    public static func CType() -> GrillCore.GrillCore_Grill_Error.Type
+    public typealias CStruct = GrillCore.GrillCore_Grill_Error
+  }
+}
+extension GrillCore.CloudCoreSDK {
+  public struct Error : Swift.Error, Swift.CustomStringConvertible {
+    public var description: Swift.String
+    public var errorType: GrillCore.CloudCoreSDK.ErrorType
+  }
+  public enum ErrorType : Swift.String {
+    case notFound
+    case serverError
+    case userSessionNotFound
+    case genericError
+    case emailOrPhoneNumberMissing
+    case passwordsMismatch
+    case pathEmpty
+    case malformedOrIncorrectPath
+    case refreshTokenFailed
+    case invalidMethod
+    case diskReadError
+    case diskError
+    case datapointsMissing
+    case urlNotString
+    case localFileNameError
+    case cachedDirectoryError
+    case propertyNotFound
+    case urlNotFound
+    case propertyNotMessageType
+    case propertyNotStringType
+    case invalidFormat
+    case createDatapointError
+    case saveDatapointError
+    case sendFileStream
+    case fileMarkCompleteError
+    case messageDatapointError
+    case fileDatapointError
+    case parentDirectoryMismatch
+    case parentDirectoryMissing
+    case childDirectoryMissing
+    case cacheKeyMissing
+    case intParseError
+    case doubleParseError
+    case tooManyInstancesError
+    case couldNotConnect
+    case invalidEmailOrPassword
+    case accountLocked
+    case notAuthorized
+    case nullPointer
+    case unknown
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension GrillCore.MantleSDK.Result {
+  public func useCloudCoreError() -> GrillCore.MantleSDK.Result<T>
+}
+extension GrillCore.GrillCoreSDK {
+  public struct NotificationManager {
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func subscribeToCookingNotifications(dsn: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func unsubscribeFromCookingNotifications(dsn: Swift.String) async -> GrillCore.MantleSDK.VoidResult
+    #endif
+    public static func isSubscribedToCookingNotifications(dsn: Swift.String) -> Swift.Bool
+    #if compiler(>=5.3) && $AsyncAwait
+    public static func updatePushToken() async -> GrillCore.MantleSDK.VoidResult
+    #endif
+  }
+}
+extension GrillCore.GrillCoreSDK {
+  public enum CalculatedState : Swift.Int {
+    case NoGrills
+    case Offline
+    case Calculating
+    case Idle
+    case Preheating
+    case Igniting
+    case AddFood
+    case FlipFood
+    case Cooking
+    case Resting
+    case Done
+    case DoneProbe1
+    case DoneProbe2
+    case LidOpenBeforeCook
+    case LidOpenDuringCook
+    case GetFood
+    case GetFoodProbe1
+    case GetFoodProbe2
+    case PlugInProbe1
+    case PlugInProbe2
+    case Error
+    case Updating
+    case PoweredOff
+    case ProbeNotSet
+    case Unknown
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum CookType : Swift.Int {
+    case Timed
+    case ProbeSingle
+    case ProbeDouble
+    case NotSet
+    case Unknown
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum CookMode : Swift.Int {
+    case Roast
+    case Bake
+    case AirCrisp
+    case Grill
+    case Smoke
+    case Dehydrate
+    case Broil
+    case NotSet
+    case Unknown
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum Doneness : Swift.Int {
+    case Rare1
+    case Rare2
+    case MedRare
+    case MedRare3
+    case MedRare4
+    case Medium
+    case Med5
+    case Med6
+    case MedWell
+    case MedWell7
+    case MedWell8
+    case Well
+    case Well9
+    case NotSet
+    case Unknown
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct GrillTimer : GrillCore.MantleStructWrapper {
+    public let on: Swift.Bool
+    public let desiredTemp: Swift.UInt
+    public let currentTemp: Swift.UInt
+    public let timeSet: Swift.UInt
+    public let timeLeft: Swift.UInt
+    public init()
+    public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_GrillTimer
+    public static func CType() -> GrillCore.GrillCore_GrillTimer.Type
+    public typealias CStruct = GrillCore.GrillCore_GrillTimer
+  }
+  public struct GrillThermometer : GrillCore.MantleStructWrapper {
+    public let active: Swift.Bool
+    public let pluggedIn: Swift.Bool
+    public let desiredTemp: Swift.UInt
+    public let currentTemp: Swift.UInt
+    public let food: GrillCore.GrillCoreSDK.GrillPresetFood
+    public let state: GrillCore.GrillCoreSDK.CalculatedState
+    public let cookProgress: Swift.UInt
+    public let restingProgress: Swift.UInt
+    public let restingTimeCompleted: Swift.UInt
+    public init()
+    public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_GrillThermometer
+    public static func CType() -> GrillCore.GrillCore_GrillThermometer.Type
+    public typealias CStruct = GrillCore.GrillCore_GrillThermometer
+  }
+  public struct GrillPresetFood : GrillCore.MantleStructWrapper {
+    public let doneness: GrillCore.GrillCoreSDK.Doneness
+    public let protein: GrillCore.GrillCoreSDK.Food
+    public let presetIndex: Swift.Int
+    public init()
+    public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_GrillPresetFood
+    public static func CType() -> GrillCore.GrillCore_GrillPresetFood.Type
+    public typealias CStruct = GrillCore.GrillCore_GrillPresetFood
+  }
+  @objc @_inheritsConvenienceInitializers public class GrillState : ObjectiveC.NSObject, GrillCore.MantleStructWrapper {
+    final public let state: GrillCore.GrillCoreSDK.CalculatedState
+    final public let lidOpen: Swift.Bool
+    final public let woodFire: Swift.Bool
+    final public let cookType: GrillCore.GrillCoreSDK.CookType
+    final public let cookMode: GrillCore.GrillCoreSDK.CookMode
+    final public let probe1: GrillCore.GrillCoreSDK.GrillThermometer
+    final public let probe2: GrillCore.GrillCoreSDK.GrillThermometer
+    final public let oven: GrillCore.GrillCoreSDK.GrillTimer
+    final public let ignitionProgress: Swift.UInt
+    final public let preheatProgress: Swift.UInt
+    final public let cookProgress: Swift.UInt
+    final public let restingProgress: Swift.UInt
+    final public let restingTimeCompleted: Swift.UInt
+    final public let connectedToInternet: Swift.Bool
+    final public let connectedToBluetooth: Swift.Bool
+    @objc override dynamic public init()
+    required public init(_ pointer: Swift.UnsafeRawPointer, clear: Swift.Bool) throws
+    public func toCStruct() -> GrillCore.GrillCore_GrillState
+    public static func CType() -> GrillCore.GrillCore_GrillState.Type
+    public func printFields()
+    public typealias CStruct = GrillCore.GrillCore_GrillState
+    @objc deinit
+  }
+}
+extension GrillCore.CloudCoreSDK.WifiPairingState : Swift.Equatable {}
+extension GrillCore.CloudCoreSDK.WifiPairingState : Swift.Hashable {}
+extension GrillCore.CloudCoreSDK.WifiPairingState : Swift.RawRepresentable {}
+extension GrillCore.GrillCoreSDK.BTCommand : Swift.Equatable {}
+extension GrillCore.GrillCoreSDK.BTCommand : Swift.Hashable {}
+extension GrillCore.GrillCoreSDK.BTCommand : Swift.RawRepresentable {}
+extension GrillCore.GrillCoreSDK.Food : Swift.Equatable {}
+extension GrillCore.GrillCoreSDK.Food : Swift.Hashable {}
+extension GrillCore.GrillCoreSDK.Food : Swift.RawRepresentable {}
+extension GrillCore.GrillCoreSDK.ProbeMode : Swift.Equatable {}
+extension GrillCore.GrillCoreSDK.ProbeMode : Swift.Hashable {}
+extension GrillCore.GrillCoreSDK.ProbeMode : Swift.RawRepresentable {}
+extension GrillCore.CloudCoreSDK.ErrorType : Swift.Equatable {}
+extension GrillCore.CloudCoreSDK.ErrorType : Swift.Hashable {}
+extension GrillCore.CloudCoreSDK.ErrorType : Swift.RawRepresentable {}
+extension GrillCore.GrillCoreSDK.CalculatedState : Swift.Equatable {}
+extension GrillCore.GrillCoreSDK.CalculatedState : Swift.Hashable {}
+extension GrillCore.GrillCoreSDK.CalculatedState : Swift.RawRepresentable {}
+extension GrillCore.GrillCoreSDK.CookType : Swift.Equatable {}
+extension GrillCore.GrillCoreSDK.CookType : Swift.Hashable {}
+extension GrillCore.GrillCoreSDK.CookType : Swift.RawRepresentable {}
+extension GrillCore.GrillCoreSDK.CookMode : Swift.Equatable {}
+extension GrillCore.GrillCoreSDK.CookMode : Swift.Hashable {}
+extension GrillCore.GrillCoreSDK.CookMode : Swift.RawRepresentable {}
+extension GrillCore.GrillCoreSDK.Doneness : Swift.Equatable {}
+extension GrillCore.GrillCoreSDK.Doneness : Swift.Hashable {}
+extension GrillCore.GrillCoreSDK.Doneness : Swift.RawRepresentable {}

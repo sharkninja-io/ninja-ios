@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>webcredentials:ninjakitchen.com</string>
+		<string>webcredentials:ninjakitchen.co.uk</string>
+		<string>webcredentials:ninjakitchen.de</string>
+		<string>webcredentials:ninjakitchen.fr</string>
+		<string>webcredentials:ninjakitchen.es</string>
+		<string>webcredentials:ninjakitchen.ca</string>
+		<string>applinks:checkout.ninjakitchen.com</string>
+		<string>applinks:ninjakitchen.com</string>
+		<string>applinks:www.ninjakitchen.com</string>
+		<string>applinks:ninjakitchen.de</string>
+		<string>applinks:www.ninjakitchen.de</string>
+		<string>applinks:ninjakitchen.co.uk</string>
+		<string>applinks:www.ninjakitchen.co.uk</string>
+		<string>applinks:ninjakitchen.fr</string>
+		<string>applinks:www.ninjakitchen.fr</string>
+		<string>applinks:ninjakitchen.es</string>
+		<string>applinks:www.ninjakitchen.es</string>
+		<string>applinks:ninjakitchen.ca</string>
+		<string>applinks:www.ninjakitchen.ca</string>
+	</array>
+	<key>com.apple.developer.networking.HotspotConfiguration</key>
+	<true/>
+	<key>com.apple.developer.networking.wifi-info</key>
+	<true/>
+	<key>com.apple.external-accessory.wireless-configuration</key>
+	<true/>
+</dict>
+</plist>

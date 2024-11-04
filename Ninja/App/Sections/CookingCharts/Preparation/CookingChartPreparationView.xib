@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CookingChartPreparationView" customModule="Ninja" customModuleProvider="target">
+            <connections>
+                <outlet property="infoLabel" destination="1f0-EO-kGp" id="VMN-B6-XF8"/>
+                <outlet property="mainStack" destination="uXh-lN-Q7J" id="Tzh-xH-zrd"/>
+                <outlet property="pageIndicator" destination="ssL-rR-EGq" id="Tum-n5-87Y"/>
+                <outlet property="startCookingButton" destination="iux-0T-b3N" id="3o9-3x-x78"/>
+                <outlet property="titleLabel" destination="MGU-wa-wI4" id="T02-RJ-sqK"/>
+                <outlet property="titleLabelTopConstraint" destination="sUm-04-li0" id="2KR-WT-bNL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="u9l-l7-YfN">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssL-rR-EGq" customClass="PageIndicator" customModule="Ninja" customModuleProvider="target">
+                    <rect key="frame" x="24" y="83" width="345" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="cXz-ha-Hd6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="indicatorHeight">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="currentPage">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iux-0T-b3N">
+                    <rect key="frame" x="24" y="751" width="345" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="startCooking"/>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOA-JZ-3Ug">
+                    <rect key="frame" x="24" y="239" width="345" height="488"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="uXh-lN-Q7J">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="488"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="kLy-7f-sWy" firstAttribute="trailing" secondItem="uXh-lN-Q7J" secondAttribute="trailing" id="60G-je-Dkj"/>
+                        <constraint firstItem="0pX-d6-j48" firstAttribute="top" secondItem="uXh-lN-Q7J" secondAttribute="top" id="Acs-3g-say"/>
+                        <constraint firstItem="uXh-lN-Q7J" firstAttribute="trailing" secondItem="0pX-d6-j48" secondAttribute="trailing" id="FKt-C9-gOv"/>
+                        <constraint firstItem="uXh-lN-Q7J" firstAttribute="leading" secondItem="kLy-7f-sWy" secondAttribute="leading" id="MOJ-LV-ZAt"/>
+                        <constraint firstItem="uXh-lN-Q7J" firstAttribute="bottom" secondItem="0pX-d6-j48" secondAttribute="bottom" id="Nfd-NG-sws"/>
+                        <constraint firstItem="uXh-lN-Q7J" firstAttribute="leading" secondItem="0pX-d6-j48" secondAttribute="leading" id="S04-lf-O0a"/>
+                        <constraint firstItem="uXh-lN-Q7J" firstAttribute="centerX" secondItem="hOA-JZ-3Ug" secondAttribute="centerX" id="epv-p2-izR"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="0pX-d6-j48"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="kLy-7f-sWy"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGU-wa-wI4">
+                    <rect key="frame" x="24" y="157" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="infoLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f0-EO-kGp">
+                    <rect key="frame" x="24" y="194" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XtE-vB-TA9"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hOA-JZ-3Ug" firstAttribute="leading" secondItem="XtE-vB-TA9" secondAttribute="leading" constant="24" id="1Bu-dM-gFl"/>
+                <constraint firstItem="iux-0T-b3N" firstAttribute="leading" secondItem="XtE-vB-TA9" secondAttribute="leading" constant="24" id="1Gp-Cm-ai2"/>
+                <constraint firstItem="iux-0T-b3N" firstAttribute="top" secondItem="hOA-JZ-3Ug" secondAttribute="bottom" constant="24" id="4oI-kq-wr3"/>
+                <constraint firstItem="XtE-vB-TA9" firstAttribute="trailing" secondItem="iux-0T-b3N" secondAttribute="trailing" constant="24" id="7Sf-is-StE"/>
+                <constraint firstItem="1f0-EO-kGp" firstAttribute="leading" secondItem="XtE-vB-TA9" secondAttribute="leading" constant="24" id="Bag-my-S3g"/>
+                <constraint firstItem="MGU-wa-wI4" firstAttribute="leading" secondItem="XtE-vB-TA9" secondAttribute="leading" constant="24" id="Crq-Ap-ZWr"/>
+                <constraint firstItem="1f0-EO-kGp" firstAttribute="top" secondItem="MGU-wa-wI4" secondAttribute="bottom" constant="16" id="K7W-kS-aco"/>
+                <constraint firstItem="hOA-JZ-3Ug" firstAttribute="top" secondItem="1f0-EO-kGp" secondAttribute="bottom" constant="24" id="LRa-1A-p06"/>
+                <constraint firstItem="XtE-vB-TA9" firstAttribute="trailing" secondItem="ssL-rR-EGq" secondAttribute="trailing" constant="24" id="PR8-oZ-QRl"/>
+                <constraint firstItem="XtE-vB-TA9" firstAttribute="trailing" secondItem="1f0-EO-kGp" secondAttribute="trailing" constant="24" id="aHl-bs-b1x"/>
+                <constraint firstItem="ssL-rR-EGq" firstAttribute="leading" secondItem="XtE-vB-TA9" secondAttribute="leading" constant="24" id="eWC-RL-wok"/>
+                <constraint firstItem="XtE-vB-TA9" firstAttribute="trailing" secondItem="MGU-wa-wI4" secondAttribute="trailing" constant="24" id="kI3-FU-daw"/>
+                <constraint firstItem="ssL-rR-EGq" firstAttribute="top" secondItem="XtE-vB-TA9" secondAttribute="top" constant="24" id="mJh-Ji-ZTb"/>
+                <constraint firstItem="XtE-vB-TA9" firstAttribute="trailing" secondItem="hOA-JZ-3Ug" secondAttribute="trailing" constant="24" id="mgw-wd-mqE"/>
+                <constraint firstItem="MGU-wa-wI4" firstAttribute="top" secondItem="XtE-vB-TA9" secondAttribute="top" constant="98" id="sUm-04-li0"/>
+                <constraint firstItem="XtE-vB-TA9" firstAttribute="bottom" secondItem="iux-0T-b3N" secondAttribute="bottom" constant="32" id="tYX-wm-hjc"/>
+            </constraints>
+            <point key="canvasLocation" x="121" y="21"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="ssL-rR-EGq">
+            <size key="intrinsicContentSize" width="100" height="200"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

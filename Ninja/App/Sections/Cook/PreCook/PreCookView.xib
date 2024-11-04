@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreCookView" customModule="Ninja" customModuleProvider="target">
+            <connections>
+                <outlet property="activityWorkingView" destination="KiG-dp-7ib" id="3Kj-Gh-s1q"/>
+                <outlet property="buttonContainer" destination="dtZ-cL-1Xq" id="grH-18-Zwn"/>
+                <outlet property="cookButton" destination="OTN-Na-KGk" id="8Wr-Qh-UjZ"/>
+                <outlet property="navBar" destination="6ha-1K-WFS" id="rPy-rb-lXz"/>
+                <outlet property="tableView" destination="5DD-pV-51x" id="7oj-5s-Czn"/>
+                <outlet property="topBackground" destination="el2-IV-CEm" id="TgH-z6-RT4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KiG-dp-7ib" customClass="ActivityWorkingView" customModule="Ninja" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="99" width="375" height="713"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el2-IV-CEm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ha-1K-WFS" customClass="DeviceNavBar" customModule="Ninja" customModuleProvider="target">
+                    <rect key="frame" x="16" y="51" width="343" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Nqi-E3-YNm"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5DD-pV-51x">
+                    <rect key="frame" x="16" y="115" width="343" height="608"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtZ-cL-1Xq">
+                    <rect key="frame" x="0.0" y="667.66666666666663" width="375" height="110.33333333333337"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTN-Na-KGk">
+                            <rect key="frame" x="24" y="44" width="327" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="startButton"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="OTN-Na-KGk" secondAttribute="trailing" constant="24" id="HD4-dI-8J0"/>
+                        <constraint firstAttribute="bottom" secondItem="OTN-Na-KGk" secondAttribute="bottom" constant="32" id="V4g-GT-BkJ"/>
+                        <constraint firstItem="OTN-Na-KGk" firstAttribute="leading" secondItem="dtZ-cL-1Xq" secondAttribute="leading" constant="24" id="eIh-Rm-iiL"/>
+                        <constraint firstItem="OTN-Na-KGk" firstAttribute="top" secondItem="dtZ-cL-1Xq" secondAttribute="top" constant="44" id="jlP-mI-vcJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KiG-dp-7ib" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1mh-Mx-wZN"/>
+                <constraint firstItem="5DD-pV-51x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="AUe-9a-n0I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6ha-1K-WFS" secondAttribute="trailing" constant="16" id="IlH-ip-pg3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5DD-pV-51x" secondAttribute="trailing" constant="16" id="N6K-Al-dzQ"/>
+                <constraint firstAttribute="bottom" secondItem="KiG-dp-7ib" secondAttribute="bottom" id="QkM-D7-VPN"/>
+                <constraint firstItem="6ha-1K-WFS" firstAttribute="bottom" secondItem="el2-IV-CEm" secondAttribute="bottom" constant="-16" id="VJA-tO-4Q7"/>
+                <constraint firstItem="dtZ-cL-1Xq" firstAttribute="centerY" secondItem="5DD-pV-51x" secondAttribute="bottom" id="WHi-vM-QXB"/>
+                <constraint firstItem="KiG-dp-7ib" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="XTr-rn-t8f"/>
+                <constraint firstItem="el2-IV-CEm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZAZ-9g-sEC"/>
+                <constraint firstItem="el2-IV-CEm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bPe-aN-hc1"/>
+                <constraint firstItem="6ha-1K-WFS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="dXH-gX-SnH"/>
+                <constraint firstItem="KiG-dp-7ib" firstAttribute="top" secondItem="el2-IV-CEm" secondAttribute="bottom" id="ejy-X9-qBe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dtZ-cL-1Xq" secondAttribute="trailing" id="gJB-8I-dxe"/>
+                <constraint firstItem="6ha-1K-WFS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="hcy-tA-LC6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dtZ-cL-1Xq" secondAttribute="bottom" id="iyj-uC-zBu"/>
+                <constraint firstItem="5DD-pV-51x" firstAttribute="top" secondItem="el2-IV-CEm" secondAttribute="bottom" constant="16" id="n9G-rB-SGj"/>
+                <constraint firstItem="dtZ-cL-1Xq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pgV-qz-FRe"/>
+                <constraint firstAttribute="trailing" secondItem="el2-IV-CEm" secondAttribute="trailing" id="tEF-cD-bpL"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

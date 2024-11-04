@@ -1,0 +1,76 @@
+{
+  "notifications": [
+    {
+      "value": 1,
+      "name": "Cook-AddFood",
+      "description": "Grill completes preheating. Cook mode is Roast, Bake, Air Crisp, or Grill.",
+      "title": "Get cooking.",
+      "body": "Your grill is preheated and ready to go.",
+      "group": "Cooking"
+    },
+    {
+      "value": 4,
+      "name": "Cook-FlipFoodTimed",
+      "description": "Grill and Air Crisp only. Cook time is greater than 6 minutes. Timer is halfway to zero. Cook mode is not  Air Crisp, Smoker, Dehydrate, or Broil. Closed-lid cook, only.",
+      "title": "Time to flip.",
+      "body": "We're half way through your cooking time.",
+      "group": "Cooking"
+    },
+    {
+      "value": 6,
+      "name": "Cook-Complete",
+      "description": "Time remaining reaches zero",
+      "title": "Time's up.",
+      "body": "Your grill will stay warm for up to 5 minutes.",
+      "group": "Cooking"
+    },
+    {
+      "value": 10,
+      "name": "Cook-FlipFoodProbe1",
+      "description": "Grill only. Probe 1 temp is halfway between start temp and target temp. Cook mode is not  Air Crisp, Smoker, Dehydrate, or Broil.",
+      "title": "Time to flip.",
+      "body": "We're half way to your set internal temp.",
+      "group": "Cooking"
+    },
+    {
+      "value": 11,
+      "name": "Cook-FlipFoodProbe2",
+      "description": "Grill only. Probe 2 temp is halfway between start temp and target temp. Cook mode is not  Air Crisp, Smoker, Dehydrate, or Broil.",
+      "title": "Time to flip.",
+      "body": "We're half way to your set internal temp.",
+      "group": "Cooking"
+    },
+    {
+      "value": 12,
+      "name": "Cook-ThermometerComplete1",
+      "description": "Probe 1 reaches target temp.",
+      "title": "Time to eat.",
+      "body": "Thermometer 1: We've reached your set resting temp.",
+      "group": "Cooking"
+    },
+    {
+      "value": 13,
+      "name": "Cook-ThermometerComplete2",
+      "description": "Probe 2 reaches target temp.",
+      "title": "Time to eat.",
+      "body": "Thermometer 2: We've reached your set resting temp.",
+      "group": "Cooking"
+    },
+    {
+      "value": 14,
+      "name": "Cook-RemoveFoodProbe1",
+      "description": "Probe 1 reaches target temp minus offset",
+      "title": "Your food is resting.",
+      "body": "Thermometer 1: Remove from grill and allow to rest. It will continue to cook with residual heat to reach set temp.",
+      "group": "Cooking"
+    },
+    {
+      "value": 15,
+      "name": "Cook-RemoveFoodProbe2",
+      "description": "Probe 2 reaches target temp minus offset",
+      "title": "Your food is resting.",
+      "body": "Thermometer 2: Remove from grill and allow to rest. It will continue to cook with residual heat to reach set temp.",
+      "group": "Cooking"
+    }
+  ]
+}

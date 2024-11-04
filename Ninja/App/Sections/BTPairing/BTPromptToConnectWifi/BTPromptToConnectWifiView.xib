@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BTPromptToConnectWifiView" customModule="Ninja" customModuleProvider="target">
+            <connections>
+                <outlet property="detailLabel" destination="66a-hK-nxS" id="aXG-Ad-L6R"/>
+                <outlet property="startButton" destination="vNe-qm-Uw0" id="Gqs-zc-kX9"/>
+                <outlet property="titleLabel" destination="moj-Qj-Yi8" id="ddH-Mk-7ra"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7E1-X5-dj2">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_connect_to_wifi" translatesAutoresizingMaskIntoConstraints="NO" id="laR-hX-Kj7">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moj-Qj-Yi8">
+                    <rect key="frame" x="24" y="95" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detailLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66a-hK-nxS">
+                    <rect key="frame" x="24" y="140" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-qm-Uw0">
+                    <rect key="frame" x="24" y="747.66666666666663" width="345" height="34.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="startWifi"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="UWt-r0-oaw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UWt-r0-oaw" firstAttribute="trailing" secondItem="moj-Qj-Yi8" secondAttribute="trailing" constant="24" id="16q-xj-RmI"/>
+                <constraint firstItem="vNe-qm-Uw0" firstAttribute="leading" secondItem="UWt-r0-oaw" secondAttribute="leading" constant="24" id="7QN-Wr-m0Z"/>
+                <constraint firstItem="laR-hX-Kj7" firstAttribute="leading" secondItem="7E1-X5-dj2" secondAttribute="leading" id="JHK-Ji-gcF"/>
+                <constraint firstAttribute="trailing" secondItem="laR-hX-Kj7" secondAttribute="trailing" id="JTK-TS-OIv"/>
+                <constraint firstItem="66a-hK-nxS" firstAttribute="leading" secondItem="UWt-r0-oaw" secondAttribute="leading" constant="24" id="Ki1-O0-Z4y"/>
+                <constraint firstItem="UWt-r0-oaw" firstAttribute="trailing" secondItem="vNe-qm-Uw0" secondAttribute="trailing" constant="24" id="Pep-G9-scK"/>
+                <constraint firstItem="moj-Qj-Yi8" firstAttribute="leading" secondItem="UWt-r0-oaw" secondAttribute="leading" constant="24" id="Pwd-JJ-oQa"/>
+                <constraint firstItem="UWt-r0-oaw" firstAttribute="trailing" secondItem="66a-hK-nxS" secondAttribute="trailing" constant="24" id="Y6c-F6-04v"/>
+                <constraint firstItem="66a-hK-nxS" firstAttribute="top" secondItem="moj-Qj-Yi8" secondAttribute="bottom" constant="24" id="dHt-A0-ohr"/>
+                <constraint firstItem="UWt-r0-oaw" firstAttribute="bottom" secondItem="vNe-qm-Uw0" secondAttribute="bottom" constant="36" id="eTa-J3-04S"/>
+                <constraint firstItem="laR-hX-Kj7" firstAttribute="top" secondItem="7E1-X5-dj2" secondAttribute="top" id="mVk-Wd-6aO"/>
+                <constraint firstItem="moj-Qj-Yi8" firstAttribute="top" secondItem="UWt-r0-oaw" secondAttribute="top" constant="36" id="ox4-K8-jpS"/>
+                <constraint firstAttribute="bottom" secondItem="laR-hX-Kj7" secondAttribute="bottom" id="th6-EF-F9J"/>
+            </constraints>
+            <point key="canvasLocation" x="138.1679389312977" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="demo_connect_to_wifi" width="390" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

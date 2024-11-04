@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThermometerSettingsView" customModule="Ninja" customModuleProvider="target">
+            <connections>
+                <outlet property="navBar" destination="f3p-J2-yQK" id="oby-d2-Wte"/>
+                <outlet property="saveButton" destination="baK-2M-tmR" id="n3J-an-48F"/>
+                <outlet property="tableView" destination="q4q-7c-3FW" id="dge-Uh-pN1"/>
+                <outlet property="topBackground" destination="vax-KZ-S2P" id="M9C-R3-JUC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vax-KZ-S2P">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="111"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-J2-yQK" customClass="DeviceNavBar" customModule="Ninja" customModuleProvider="target">
+                    <rect key="frame" x="16" y="63" width="361" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="WFQ-9r-Hr6"/>
+                        <constraint firstAttribute="height" constant="32" id="ais-LX-IJq"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q4q-7c-3FW">
+                    <rect key="frame" x="24" y="127" width="345" height="592"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baK-2M-tmR">
+                    <rect key="frame" x="24" y="751" width="345" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="startButton"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="baK-2M-tmR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="0eg-yX-0hI"/>
+                <constraint firstItem="f3p-J2-yQK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="1p8-DO-wKl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="baK-2M-tmR" secondAttribute="bottom" constant="32" id="39v-PO-gZo"/>
+                <constraint firstItem="q4q-7c-3FW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="AN0-Lk-PGL"/>
+                <constraint firstItem="baK-2M-tmR" firstAttribute="top" secondItem="q4q-7c-3FW" secondAttribute="bottom" constant="32" id="By7-G9-Pin"/>
+                <constraint firstItem="vax-KZ-S2P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="J6N-Gr-Obr"/>
+                <constraint firstItem="f3p-J2-yQK" firstAttribute="bottom" secondItem="vax-KZ-S2P" secondAttribute="bottom" constant="-16" id="MQB-Uf-snk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="baK-2M-tmR" secondAttribute="trailing" constant="24" id="NBD-mj-WSA"/>
+                <constraint firstAttribute="trailing" secondItem="vax-KZ-S2P" secondAttribute="trailing" id="Q47-Ey-74E"/>
+                <constraint firstItem="vax-KZ-S2P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="S5A-L7-cKf"/>
+                <constraint firstItem="q4q-7c-3FW" firstAttribute="top" secondItem="f3p-J2-yQK" secondAttribute="bottom" constant="32" id="aKc-ih-6ZJ"/>
+                <constraint firstItem="f3p-J2-yQK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="hRs-KT-UAf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q4q-7c-3FW" secondAttribute="trailing" constant="24" id="pD5-Ea-zqv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f3p-J2-yQK" secondAttribute="trailing" constant="16" id="xfQ-JB-Ghz"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

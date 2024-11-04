@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailVerificationView" customModule="Ninja" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="5CA-bY-8Gx" id="I9Q-uR-GHn"/>
+                <outlet property="messageBlock" destination="Kg9-n4-NmS" id="ckK-vB-wwF"/>
+                <outlet property="resendButton" destination="oIJ-LI-2ak" id="1bh-S5-DXL"/>
+                <outlet property="startOverButton" destination="u9F-I5-1WG" id="LL6-Xd-sL5"/>
+                <outlet property="titleLabel" destination="CQU-rU-8Ei" id="h4z-Hb-e8K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQU-rU-8Ei">
+                    <rect key="frame" x="24" y="174" width="327" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="descriptionLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CA-bY-8Gx">
+                    <rect key="frame" x="24" y="210.33333333333331" width="327" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIJ-LI-2ak">
+                    <rect key="frame" x="24" y="662" width="327" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="resendButton"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9F-I5-1WG">
+                    <rect key="frame" x="24" y="716" width="327" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="startOverButton"/>
+                </button>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-n4-NmS" customClass="MessageBlockView" customModule="Ninja" customModuleProvider="target">
+                    <rect key="frame" x="24" y="50" width="327" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="u9F-I5-1WG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="1hZ-jy-Ttk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5CA-bY-8Gx" secondAttribute="trailing" constant="24" id="5GT-v7-bbU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oIJ-LI-2ak" secondAttribute="trailing" constant="24" id="CNK-D3-f9t"/>
+                <constraint firstItem="Kg9-n4-NmS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="DE4-8k-4Vd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Kg9-n4-NmS" secondAttribute="trailing" constant="24" id="Ord-DA-07M"/>
+                <constraint firstItem="CQU-rU-8Ei" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="QmH-iz-YAf"/>
+                <constraint firstItem="u9F-I5-1WG" firstAttribute="top" secondItem="oIJ-LI-2ak" secondAttribute="bottom" constant="24" id="Y81-Ab-Bxq"/>
+                <constraint firstItem="oIJ-LI-2ak" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="YLG-Ey-tFW"/>
+                <constraint firstItem="5CA-bY-8Gx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="bRf-cM-lYG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CQU-rU-8Ei" secondAttribute="trailing" constant="24" id="beH-Lo-mvg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="u9F-I5-1WG" secondAttribute="bottom" constant="32" id="cSx-Cp-QKV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="u9F-I5-1WG" secondAttribute="trailing" constant="24" id="fVc-Mp-pyU"/>
+                <constraint firstItem="CQU-rU-8Ei" firstAttribute="top" secondItem="Kg9-n4-NmS" secondAttribute="bottom" constant="24" id="qbG-Ek-6PG"/>
+                <constraint firstItem="Kg9-n4-NmS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="uGg-cF-wX6"/>
+                <constraint firstItem="5CA-bY-8Gx" firstAttribute="top" secondItem="CQU-rU-8Ei" secondAttribute="bottom" constant="16" id="yFk-QR-UHh"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

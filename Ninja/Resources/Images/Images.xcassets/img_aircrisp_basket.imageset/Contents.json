@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "img_aircrisp_basket.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "probe_presets": [
+    {
+      "food": "Manual",
+      "default_temp": 165,
+      "min": 100,
+      "max": 210,
+      "inc": 1
+    },
+    {
+      "food": "Chicken",
+      "default_temp": 165,
+      "min": 165,
+      "max": 165,
+      "inc": 1,
+      "descriptions": [
+        {
+          "temp": 165,
+          "temp_description": "Well"
+        }
+      ]
+    },
+    {
+      "food": "Beef",
+      "default_temp": 120,
+      "min": 120,
+      "max": 160,
+      "inc": 1,
+      "descriptions": [
+        {
+          "temp": 120,
+          "temp_description": "Rare 1"
+        },
+        {
+          "temp": 125,
+          "temp_description": "Rare 2"
+        },
+        {
+          "temp": 130,
+          "temp_description": "M. Rare 3"
+        },
+        {
+          "temp": 135,
+          "temp_description": "M. Rare 4"
+        },
+        {
+          "temp": 140,
+          "temp_description": "Medium 5"
+        },
+        {
+          "temp": 145,
+          "temp_description": "Medium 6"
+        },
+        {
+          "temp": 150,
+          "temp_description": "M. Well 7"
+        },
+        {
+          "temp": 155,
+          "temp_description": "M. Well 8"
+        },
+        {
+          "temp": 160,
+          "temp_description": "Well 9"
+        }
+      ]
+    },
+    {
+      "food": "Pork",
+      "default_temp": 145,
+      "min": 145,
+      "max": 160,
+      "inc": 1,
+      "descriptions": [
+        {
+          "temp": 145,
+          "temp_description": "Med Rare"
+        },
+        {
+          "temp": 150,
+          "temp_description": "Medium"
+        },
+        {
+          "temp": 155,
+          "temp_description": "Med Well"
+        },
+        {
+          "temp": 160,
+          "temp_description": "Well"
+        }
+      ]
+    },
+    {
+      "food": "Fish",
+      "default_temp": 125,
+      "min": 125,
+      "max": 140,
+      "inc": 1,
+      "descriptions": [
+        {
+          "temp": 125,
+          "temp_description": "M. Rare 3"
+        },
+        {
+          "temp": 130,
+          "temp_description": "Medium 5"
+        },
+        {
+          "temp": 135,
+          "temp_description": "M. Well 7"
+        },
+        {
+          "temp": 140,
+          "temp_description": "Well"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BTPairingPreparationView" customModule="Ninja" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="EHI-xx-1t3" id="lz6-Ju-pyB"/>
+                <outlet property="pageIndicator" destination="ewb-Rj-Gb8" id="Hoe-qx-cU2"/>
+                <outlet property="tableView" destination="1nd-oF-ydM" id="58k-hg-bzH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9xi-df-Qjt">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewb-Rj-Gb8" customClass="PageIndicator" customModule="Ninja" customModuleProvider="target">
+                    <rect key="frame" x="24" y="75" width="345" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="XTk-33-cgV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="indicatorHeight">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="currentPage">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1nd-oF-ydM">
+                    <rect key="frame" x="24" y="133" width="345" height="594"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHI-xx-1t3">
+                    <rect key="frame" x="24" y="751" width="345" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="next"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="JRT-eI-tVD"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JRT-eI-tVD" firstAttribute="trailing" secondItem="ewb-Rj-Gb8" secondAttribute="trailing" constant="24" id="06U-PY-MCx"/>
+                <constraint firstItem="ewb-Rj-Gb8" firstAttribute="leading" secondItem="JRT-eI-tVD" secondAttribute="leading" constant="24" id="Bm2-uz-lrS"/>
+                <constraint firstItem="1nd-oF-ydM" firstAttribute="leading" secondItem="JRT-eI-tVD" secondAttribute="leading" constant="24" id="Kqa-rF-RI9"/>
+                <constraint firstItem="1nd-oF-ydM" firstAttribute="top" secondItem="ewb-Rj-Gb8" secondAttribute="bottom" constant="8" id="hIp-Gn-DS2"/>
+                <constraint firstItem="JRT-eI-tVD" firstAttribute="trailing" secondItem="1nd-oF-ydM" secondAttribute="trailing" constant="24" id="hRT-L2-71V"/>
+                <constraint firstItem="JRT-eI-tVD" firstAttribute="bottom" secondItem="EHI-xx-1t3" secondAttribute="bottom" constant="32" id="iR0-lu-p6r"/>
+                <constraint firstItem="JRT-eI-tVD" firstAttribute="trailing" secondItem="EHI-xx-1t3" secondAttribute="trailing" constant="24" id="jCy-Rt-F3a"/>
+                <constraint firstItem="ewb-Rj-Gb8" firstAttribute="top" secondItem="JRT-eI-tVD" secondAttribute="top" constant="16" id="jGw-Yg-SOV"/>
+                <constraint firstItem="EHI-xx-1t3" firstAttribute="top" secondItem="1nd-oF-ydM" secondAttribute="bottom" constant="24" id="lDa-CM-RPj"/>
+                <constraint firstItem="EHI-xx-1t3" firstAttribute="leading" secondItem="JRT-eI-tVD" secondAttribute="leading" constant="24" id="muC-Ue-gP4"/>
+            </constraints>
+            <point key="canvasLocation" x="121" y="21"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="ewb-Rj-Gb8">
+            <size key="intrinsicContentSize" width="100" height="200"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

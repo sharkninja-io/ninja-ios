@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PairGrillFailureView" customModule="Ninja" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="IRX-9c-2fd" id="laK-dw-X8W"/>
+                <outlet property="pageTitleLabel" destination="TVt-2v-pPw" id="ysc-76-ccg"/>
+                <outlet property="tableView" destination="CZM-gt-CZo" id="PUu-Sp-pID"/>
+                <outlet property="titleLabel" destination="y9w-ll-Acw" id="ZE7-p8-2iV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRX-9c-2fd">
+                    <rect key="frame" x="24" y="751" width="345" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="tryAgainButton"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pageTitleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVt-2v-pPw">
+                    <rect key="frame" x="24" y="91" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9w-ll-Acw">
+                    <rect key="frame" x="24" y="120" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CZM-gt-CZo">
+                    <rect key="frame" x="24" y="157" width="345" height="578"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IRX-9c-2fd" secondAttribute="bottom" constant="32" id="8e2-em-BL4"/>
+                <constraint firstItem="y9w-ll-Acw" firstAttribute="top" secondItem="TVt-2v-pPw" secondAttribute="bottom" constant="8" id="Aos-nU-ibA"/>
+                <constraint firstItem="CZM-gt-CZo" firstAttribute="top" secondItem="y9w-ll-Acw" secondAttribute="bottom" constant="16" id="BIu-a0-gpc"/>
+                <constraint firstItem="TVt-2v-pPw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="PZD-LW-dfQ"/>
+                <constraint firstItem="IRX-9c-2fd" firstAttribute="top" secondItem="CZM-gt-CZo" secondAttribute="bottom" constant="16" id="Yub-qK-H4b"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CZM-gt-CZo" secondAttribute="trailing" constant="24" id="e46-Sy-ivj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IRX-9c-2fd" secondAttribute="trailing" constant="24" id="i4i-k3-qnJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="y9w-ll-Acw" secondAttribute="trailing" constant="24" id="kI0-ca-PRv"/>
+                <constraint firstItem="CZM-gt-CZo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="lG0-OJ-MCK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TVt-2v-pPw" secondAttribute="trailing" constant="24" id="rhl-Bp-0uU"/>
+                <constraint firstItem="y9w-ll-Acw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="tB8-98-Jrn"/>
+                <constraint firstItem="IRX-9c-2fd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="tuI-aw-kZx"/>
+                <constraint firstItem="TVt-2v-pPw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="xjF-fr-huG"/>
+            </constraints>
+            <point key="canvasLocation" x="121" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

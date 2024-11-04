@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BTPersistentErrorFindingDeviceView" customModule="Ninja" customModuleProvider="target">
+            <connections>
+                <outlet property="connectWithWifiButton" destination="0fM-XA-fek" id="7uJ-6e-NcV"/>
+                <outlet property="detailLabel" destination="uP3-Ju-EnR" id="7nT-vr-QXq"/>
+                <outlet property="fadeView" destination="xZE-Hy-LOb" id="IDU-cF-znC"/>
+                <outlet property="titleLabel" destination="iW3-Xh-UTx" id="Ppu-cb-65u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_pairing_error_bg" translatesAutoresizingMaskIntoConstraints="NO" id="i4c-sy-AyJ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZE-Hy-LOb">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW3-Xh-UTx">
+                    <rect key="frame" x="24" y="95" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detailLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP3-Ju-EnR">
+                    <rect key="frame" x="24" y="140" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fM-XA-fek">
+                    <rect key="frame" x="24" y="747.66666666666663" width="345" height="34.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="GoToWifiButton"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uP3-Ju-EnR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="10G-IR-sFd"/>
+                <constraint firstItem="i4c-sy-AyJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5GY-B4-mNu"/>
+                <constraint firstItem="i4c-sy-AyJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6c4-Wg-1TO"/>
+                <constraint firstAttribute="bottom" secondItem="i4c-sy-AyJ" secondAttribute="bottom" id="DlK-EE-9qm"/>
+                <constraint firstAttribute="trailing" secondItem="i4c-sy-AyJ" secondAttribute="trailing" id="E26-m8-1aQ"/>
+                <constraint firstItem="xZE-Hy-LOb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gko-f0-5iU"/>
+                <constraint firstItem="iW3-Xh-UTx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="36" id="I1G-U8-lmN"/>
+                <constraint firstAttribute="bottom" secondItem="xZE-Hy-LOb" secondAttribute="bottom" id="JiS-pL-Zbu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iW3-Xh-UTx" secondAttribute="trailing" constant="24" id="Lve-Jg-M0i"/>
+                <constraint firstItem="uP3-Ju-EnR" firstAttribute="top" secondItem="iW3-Xh-UTx" secondAttribute="bottom" constant="24" id="M5A-gA-1KJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0fM-XA-fek" secondAttribute="trailing" constant="24" id="Nd9-HR-hfD"/>
+                <constraint firstItem="0fM-XA-fek" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="Okc-cs-6IS"/>
+                <constraint firstAttribute="trailing" secondItem="xZE-Hy-LOb" secondAttribute="trailing" id="Yvr-fp-ZIT"/>
+                <constraint firstItem="iW3-Xh-UTx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="esJ-AY-Krm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uP3-Ju-EnR" secondAttribute="trailing" constant="24" id="iyl-oa-FlM"/>
+                <constraint firstItem="xZE-Hy-LOb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ks7-SW-ABr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0fM-XA-fek" secondAttribute="bottom" constant="36" id="pa9-Ej-GVL"/>
+            </constraints>
+            <point key="canvasLocation" x="138.1679389312977" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="demo_pairing_error_bg" width="390" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

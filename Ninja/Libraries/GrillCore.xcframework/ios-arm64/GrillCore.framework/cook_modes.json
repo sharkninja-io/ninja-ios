@@ -1,0 +1,21 @@
+{
+  "available_modes": {
+    "us": [
+      "Bake",
+      "Dehydrate",
+      "Broil",
+      "Grill",
+      "Smoke",
+      "AirCrisp",
+      "Roast"
+    ],
+    "international": [
+      "Bake",
+      "Dehydrate",
+      "Grill",
+      "Smoke",
+      "AirCrisp",
+      "Roast"
+    ]
+  }
+}

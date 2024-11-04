@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_lnp._tcp.</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Gotham-Black.otf</string>
+		<string>Gotham-BlackItalic.otf</string>
+		<string>Gotham-Bold.otf</string>
+		<string>Gotham-BoldItalic.otf</string>
+		<string>Gotham-Book.otf</string>
+		<string>Gotham-BookItalic.otf</string>
+		<string>Gotham-ExtraLight.otf</string>
+		<string>Gotham-ExtraLightItalic.otf</string>
+		<string>Gotham-Light.otf</string>
+		<string>Gotham-LightItalic.otf</string>
+		<string>Gotham-Medium.otf</string>
+		<string>Gotham-MediumItalic.otf</string>
+		<string>Gotham-Thin.otf</string>
+		<string>Gotham-ThinItalic.otf</string>
+		<string>Gotham-Ultra.otf</string>
+		<string>Gotham-UltraItalic.otf</string>
+		<string>ProximaNovaBold.otf</string>
+		<string>ProximaNovaLight.otf</string>
+		<string>ProximaNovaRegular.otf</string>
+		<string>ProximaNovaSemibold.otf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>bugsnag</key>
+	<dict>
+		<key>apiKey</key>
+		<string>e5be2f79ecc69eaf013329078c50b443</string>
+	</dict>
+	<key>mixpanel</key>
+	<dict>
+		<key>apiKey</key>
+		<string>70d842f308737d8163375def35ff5da4</string>
+	</dict>
+	<key>testfairy</key>
+	<dict>
+		<key>apiKey</key>
+		<string>SDK-BwSYgGjs</string>
+	</dict>
+</dict>
+</plist>

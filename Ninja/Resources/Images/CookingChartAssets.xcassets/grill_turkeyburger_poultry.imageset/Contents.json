@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "grill_turkeyburgers_poultry.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

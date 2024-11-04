@@ -1,0 +1,539 @@
+/* 
+  Localizable.strings
+  Ninja
+
+  Created by Martin Burch on 8/31/22.
+  
+*/
+
+"global_email_template_conf-NA" = "app-ninja-prod-conf-en";
+"global_email_template_restpwd-NA" = "app-ninja-prod-rstpw-en";
+"global_email_template_conf-NA-Dev" = "app-ninja-dev-conf-en";
+"global_email_template_restpwd-NA-Dev" = "app-ninja-dev-rstpw-en";
+"global_email_template_conf-CN" = "app-conf-s-nocode-en-cn";
+"global_email_template_restpwd-CN" = "app-restpwd-s-en-cn";
+"global_email_template_conf-CN-Dev" = "app-conf-s-nocode-en-cn-dev";
+"global_email_template_restpwd-CN-Dev" = "app-restpwd-s-en-cn-dev";
+"global_email_template_conf-EU" = "app-conf-s-nocode-en-eu";
+"global_email_template_restpwd-EU" = "app-restpwd-s-en-eu";
+
+"031fd11ba8734ab304116a023b5216306b246bee" = "AT";
+"3472ff5765a2d9cb8605e9b928f61808c7010096" = "BE";
+"9f5da1d189a479a06c40c8d6edcc3363d968c7fe" = "BG";
+"09acbb7d1da8aa3daff4c1ec8076713606974c64" = "CA";
+"b4061022cd6180ebd0ebf9a724b6f1762017973b" = "CH";
+"5065f3689a7d7b6866f33c8d8dd8eac774b3eddc" = "CN";
+"c44de80e93e02bfee706c65007a9e6f4e16bde07" = "CY";
+"1abd761884ed31397162c678cc45dbd15b20cdf0" = "CZ";
+"ce3e4bed2954adbf05f8edfaf1a4c0cc0cea70e9" = "DE";
+"7b3ebc324268e66c2e58d3ac733f5dec5827eda6" = "DK";
+"1a8aea63b8211aafabd118db0572a13810d234ff" = "EE";
+"9debabbaa01a190fabe8324c5e6e2f2808052099" = "ES";
+"8f2ffce11be02356fb37abc2bef0f4d2163e26ff" = "FI";
+"6d2830b1e76dc7300fce6745176601827d233de8" = "FR";
+"505a44facaa3e758845f6e101f4e21f9d99acf63" = "GB";
+"7433e6c1b098b3bdaf6011cdf61e3ae5855499cf" = "GR";
+"f187928fdb223e7f3b7b0396e72e2d59a5f12b29" = "HR";
+"a56260db2f693f2d6557e45253a833431ae2ed71" = "HU";
+"9ff31bb53dfc2bff233e882d367714fba682d7dc" = "IE";
+"ec4a2a5056d72d8e03345caaebf4607d163e6dd7" = "IS";
+"5422031a52353002aae49d9ae744930b031742b1" = "IT";
+"1920a56593b125b12813085d0845ffcdd31e1349" = "JP";
+"ba32a770871155f7ab78e5ea910a652251572807" = "LI";
+"6c62fb7313eb9d28efbca3e61ff13801b5b45a0a" = "LT";
+"29ccc316ff75c97e08d94a13c573ebe7438c1a51" = "LU";
+"a09b13dff976fe20f239fab7a59a35bde98835e6" = "LV";
+"c3c2fa56598ad851b7830cef382142780461bca4" = "MT";
+"a59ba24d63e9c67fe81bbc277e1424777efe1eda" = "NL";
+"a0509b7780628bd9d9abc7eb8a2163477341053a" = "NO";
+"3238a2c23ec52b54d1a9d62034bcdec3628b7db6" = "PL";
+"7c4c910b08dc857dcb4cf5da2372858fb614226b" = "PT";
+"86282ad0a8acc92fe00462f240dfe652af4cb3dd" = "RO";
+"5dce41c3c1fccd0c04d39f21a0cbde80a6071e2b" = "SE";
+"2cd845399ebc86aad1fd9e1e6bfa6aa61179694a" = "SI";
+"8f15af5eb518056ac0712bb85c82227a0075d1c9" = "SK";
+"aa3093554472fd113135bed5b63e12f84c2e9fe8" = "US";
+
+"593905b31972f6ffe58325abf98595caf4ebf458" = "Austria";
+"5cb4c9d828175ed3931ec52305b32f47173a8e04" = "Belgium";
+"5c77726358c5daf98ad9cdccd0882bca0f718b88" = "Bulgaria";
+"cd6a7b8768528485a0dbcd459185091e80dc28ad" = "Canada";
+"c5026dd8f7f2472de55291e0f1b04d60e5498a11" = "China mainland";
+"d7e0453bb4af87006533f4d77ad9546dac533db8" = "Croatia";
+"852addab901cbc5699d190285a009d7a7035fb57" = "Cyprus";
+"045e2f1d6c4d61aaecfd1b2f30f30a9711042768" = "Czechia";
+"89da124e04dfe1ad9946cd37d91a119e1d028898" = "Denmark";
+"f0a96da3f86a334cbe8d569110d6545277973859" = "Estonia";
+"c909b138eba89ecfbd86df4c9d170ac78d4a3820" = "Finland";
+"e3772ac4b4db87b4a8dbfa59ef43cd1a8ad29515" = "France";
+"17d53e0e6a68acdf80b78d4f9d868c8736db2cec" = "Germany";
+"4902a456caa9a4eab463ce526c9df0f6180be184" = "Greece";
+"f14e46ce7d094f9326167acc499698128651be85" = "Hungary";
+"b3c92eecf0aa1905086059d9f6d3261d8fb19657" = "Iceland";
+"eb2131ece0efe78ee8bb1ae98af6099114a8df09" = "Ireland";
+"ad79ef0f076d3a686ab9738925f4dd2c7e69d7d1" = "Italy";
+"fcf29f6cad3232704b33e962ef5194fad3b6817b" = "Japan";
+"c5f5bb3b350774d7cda57104c55fb6c82b7ae7d9" = "Latvia";
+"b0ddce0f54c916c106117e280aead4f9c0cbf1df" = "Liechtenstein";
+"74a788cee27d549015a0786732c662e05cdd7567" = "Lithuania";
+"5076721c4060feeb69bd2c3dd9bdce115d5c62f3" = "Luxembourg";
+"1a591a3e91fcb7a47f2c08e9e2e117f39af22078" = "Malta";
+"fb61c8a8eba24117016597fc7618f38821b16e8f" = "Netherlands";
+"988455e67df7cd81d090ea4bacdc05f39fb7caa5" = "Norway";
+"5ff03b7273b1808e5ba852e230991bbf07da703c" = "Poland";
+"a495190bcc2ef4116725616d321016a7def5bd8f" = "Portugal";
+"36624dddae19ce59ff49b4f58e262b72be9307ad" = "Rest of World";
+"d6b897fd145a64fbad36ff7cb1c47a00dcbbe9b6" = "Romania";
+"b6c149c3e00467fba347629a63ed02fed098d061" = "Slovakia";
+"d1aa0503612aa4168939b77b59ca74532a11951a" = "Slovenia";
+"20a8df9b760336178fca425339ec1c7e542a2463" = "Spain";
+"72ddd2b619af6d6a73febf80f7fcad22495498cd" = "Sweden";
+"77dcd849e550afec3c83d38fcc8cbc72c058f4db" = "Switzerland";
+"7770d04c7bfb791e7c95959f12d6797bee87a8d8" = "UK";
+"9769121f10f77079b27eb08e9ffa488cbcc37ed0" = "United Kingdom";
+"768685ca582abd0af2fbb57ca37752aa98c9372b" = "United States";
+
+// SHARED
+"continue" = "CONTINUE";
+"ok" = "OK";
+"email" = "EMAIL";
+"password" = "PASSWORD";
+"login" = "LOGIN";
+"enter_your_email" = "Enter your email";
+"log_in" = "Log in";
+"enter_your_password" = "Enter your password";
+"sign_up_here" = "Sign Up here";
+"reset_password" = "RESET PASSWORD";
+"register_now" = "REGISTER NOW";
+"enter_your_code" = "Enter your code.";
+"one_uppercase" = "1 uppercase letter";
+"one_lowercase" = "1 lowercase letter";
+"one_number" = "1 number";
+"eight_characters" = "8 or more characters";
+"next" = "NEXT";
+"important" = "IMPORTANT";
+"go_to_settings" = "Go To Settings";
+"select_privacy" = "Select Privacy";
+"more_info" = "More info";
+"got_it" = "Got it";
+"try_again" = "Try Again";
+"connect_to_grill" = "Connect to Grill";
+"grill_connected" = "Grill detected";
+"other" = "Other";
+"connect" = "CONNECT";
+"my_network" = "My Network";
+"try_again" = "Try Again";
+"wifi_tips" = "Wi-Fi Tips";
+"customer_support" = "Customer Support";
+"explore" = "Explore";
+"cook" = "Cook";
+"settings" = "Settings";
+"email" = "Email";
+"retry" = "Retry";
+"cancel" = "Cancel";
+"fahrenheight_symbol" = "F";
+"celsius_symbol" = "C";
+"done" = "Done";
+"save_changes" = "Save Changes";
+"plug_in" = "Plug in";
+
+"grill" = "Grill";
+"smoker" = "Smoker";
+"air_crisp" = "Air Crisp";
+"roast" = "Roast";
+"bake" = "Bake";
+"broil" = "Broil";
+"dehydrate" = "Dehydrate";
+"manual" = "Manual";
+"chicken" = "Chicken";
+"beef" = "Beef";
+"pork" = "Pork";
+"fish" = "Fish";
+"calculating" = "Calculating";
+"cooking" = "Cooking";
+"idle" = "Idle";
+"ignition" = "Ignition";
+"offline" = "Offline";
+"preheating" = "Preheating";
+"probe_not_set" = "Probe Not Set";
+"resting" = "Resting";
+"add_food" = "Add\nFood";
+"get_food" = "Get Food";
+"flip_food" = "Flip\nFood";
+"close_lid" = "Close\nLid";
+"complete" = "Complete";
+"rare1" = "Rare1";
+"rare2" = "Rare2";
+"med_rare3" = "MedRare3";
+"med_rare4" = "MedRare4";
+"med5" = "Med5";
+"med6" = "Med6";
+"med_well7" = "MedWell7";
+"med_well8" = "MedWell8";
+"well9" = "Well9";
+"unknown" = "Unknown";
+"not_set" = "Not Set";
+"med_rare" = "MedRare";
+"medium" = "Medium";
+"med_well" = "MedWell";
+"well" = "Well";
+"low" = "Lo";
+"med" = "Med";
+"high" = "Hi";
+"sec" = "Sec";
+"secs" = "Secs";
+"min" = "Min";
+"mins" = "Mins";
+"hrs" = "Hrs";
+"hours" = "Hours";
+"thermometer" = "Thermometer";
+"thermometer_1" = "Thermometer #1";
+"thermometer_2" = "Thermometer #2";
+"cook_mode" = "Cook Mode";
+"doneness_point" = "Doneness Point";
+"internal_temp" = "Internal Temp";
+"until_complete" = "Until Complete";
+"current_temp" = "Current Temp";
+"unplugged" = "Unplugged";
+"cant_read_temp" = "Can't Read Temp";
+"skip_preheat" = "Skip Preheat";
+"skip_ignition" = "Skip Ignition";
+"timed_cook" = "Timed Cook";
+"activated" = "Activated";
+"off" = "Off";
+"woodfire_flavor" = "Woodfire flavor technology";
+"temp" = "Temp";
+"grill_temp" = "Grill Temp";
+"cook_time" = "Cook Time";
+"target_temp" = "Target Temp";
+"doneness" = "Doneness";
+"cook_mode" = "Cook Mode";
+
+// Authentication
+"auth_country_title" = "Please select your country/region.";
+"auth_create_title" = "Welcome!";
+"auth_create_description" = "Let's create your new Ninja account.";
+"auth_create_password_placeholder" = "Create a new password";
+"auth_create_agree" = "I agree to the";
+"auth_create_understand" = "I have read and understand the";
+"auth_create_already" = "Already have an account?";
+"auth_create_terms" = "Terms & Conditions";
+"auth_create_privacy" = "Privacy Notice";
+"auth_create_enter" = "Please enter a valid email address.";
+"auth_create_did_you_mean" = "Did you mean";
+"auth_create_do_you_know" = "Do you know that you can use your Shark|Ninja account to log in.";
+"auth_email_your" = "your email";
+"auth_verifying_verifying" = "Verifying..., please hold on a few seconds.";
+"auth_verifying_verified" = "Your account has been verified!";
+"auth_login_title" = "Good to see you again!";
+"auth_login_description" = "Log in with your Ninja account to start.";
+"auth_login_account" = "Don't have an account?";
+"auth_login_forgot" = "Forgot your password?";
+"auth_login_invalid" = "This email/password combination is invalid. Please try again.";
+"auth_login_do_you_know" = "Do you know that you can use your Shark|Ninja account to log in?";
+"auth_login_already" = "Shark|Ninja account is already associated with this email.";
+"auth_login_successfully" = "Your password was reset successfully!";
+"auth_forgot_cant_login" = "Can't login?";
+"auth_forgot_well_email" = "We'll email you instructions to reset your password.";
+"auth_forgot_dont_have_an_account" = "Don't have an account?";
+"auth_forgot_almost_title" = "We're almost there!";
+"auth_forgot_almost_description" = "We sent you an email with instructions on how to reset your password. Open the email and tap the Reset Password link to get started.";
+"auth_forgot_almost_didnt_receive" = "Didn't get the email? Check your spam folder. If the message still hasn't arrived after a few minutes, tap the button below and we will re-send it.";
+"auth_forgot_almost_resend_email" = "RESEND EMAIL";
+"auth_forgot_almost_edit_email" = "Edit Email";
+"auth_reset_title" = "Great!";
+"auth_reset_description" = "Now let's create a new password.";
+
+
+// BT PAIRING
+"bt_pairing_permissions_page_title" = "REQUESTING PERMISSIONS";
+"bt_pairing_permissions_title" = "Please allow permissions to connect to your Grill.";
+"bt_pairing_permissions_description" = "Select OK / Join to accept the permission prompts. These prompts must be accepted for the app to connect to your Grill.";
+"bt_pairing_permissions_enable_bluetooth" = "Enable Bluetooth";
+"bt_pairing_permissions_allow_access" = "Allow access and make sure it is turned on";
+"bt_pairing_permissions_whoops" = "Whoops! You declined permission for Ninja ProConnect to access your Bluetooth!";
+"bt_pairing_permissions_open_your" = "Open your mobile device's settings";
+"bt_pairing_permissions_look_for" = "Look for the Ninja ProConnect app and toggle on to grant bluetooth permission";
+"bt_pairing_permissions_return_to" = "Return to the Ninja ProConnect app";
+
+
+"bt_pairing_title" = "PAIRING PREPARATION";
+"bt_pairing_this_might" = "This might take a moment.";
+"bt_pairing_please_bear" = "Please bear with me!";
+"bt_pairing_great_friends" = "Great! We are going to be good friends!";
+"bt_pairing_connection" = "Connection to Grill";
+
+"bt_pairing_preparations_step_one" = "1. Plug-in your Grill";
+"bt_pairing_preparations_3_prong" = "Plug unit in to proper 3-prong GFCI outlets only.";
+"bt_pairing_preparations_step_two" = "2. Turn on your Grill";
+"bt_pairing_preparations_press_power" = "Press the power button to turn your Grill on.";
+"bt_pairing_preparations_step_three" = "3. Connect the app to your Grill";
+"bt_pairing_preparations_press_hold" = "\u{2022} Press and hold the dial for 3-5 seconds until you hear an audible beep.\n\u{2022} Press NEXT button below to select your Grill.";
+"bt_pairing_preparations_plugin" = "Plug-in your appliance";
+"bt_pairing_preparations_extension" = "If you require an extension cord it must be:";
+"bt_pairing_preparations_25_max" = "25ft max length, no less than 14 gauge OR 50ft, no less than 12 gauge.";
+"bt_pairing_preparations_suitable" = "Suitable for outdoor use.";
+"bt_pairing_preparations_turn_on" = "Turn on your appliance";
+"bt_pairing_preparations_press_start" = "Press the Start button on your Grill";
+"bt_pairing_preparations_press_rounded" = "Press the rounded Start/Stop button until the screen lights up";
+
+"bt_pairing_searching_problem" = "Ooopss... There was a problem finding your Grill. Please try again!";
+"bt_pairing_searching_activate" = "Activate discovery mode";
+"bt_pairing_searching_press_hold" = "On the grill, press and hold the dial for 3-5 seconds to activate discovery mode. You have successfully paired when the Bluetooth icon has transitioned from flashing to solid white.";
+"bt_pairing_searching_connect_wifi" = "Connect With Wi-Fi";
+"bt_pairing_searching_unable" = "Oopss... unable to connect with bluetooth";
+"bt_pairing_searching_lets_try" = "Let's try with Wi-Fi, you’ll be able to control your cook from anywhere as long as internet connection is available.";
+
+"bt_pairing_device_detected_choose" = "Choose your Grill to start the setup process.";
+
+"bt_pairing_name_hello_there" = "Hello there!";
+"bt_pairing_name_partner" = "I’m your new cooking partner";
+"bt_pairing_name_get_started" = "Let's Get Started";
+"bt_pairing_name_do_you_want" = "Do you want to pick a cool name for me?";
+"bt_pairing_name_choose" = "Choose A Name";
+"bt_pairing_name_no_thanks" = "No thanks, continue";
+"bt_pairing_name_name_must" = "Name must be 15 characters or less";
+"bt_pairing_name_no_thanks" = "No thanks, continue";
+
+"bt_pairing_prompt_stronger" = "Our connection can be stronger!";
+"bt_pairing_prompt_wifi" = "By pairing with WiFi, you can control your grill anywhere, so long as there’s an internet connection.";
+"bt_pairing_prompt_start_pairing" = "Start Pairing Wifi";
+
+"bt_pairing_wifi_select" = "Select your Wi-Fi network";
+"bt_pairing_wifi_weak_network" = "Make sure the network has at least 2 bars. If the signal is too weak, try moving your Grill closer to the router.";
+"bt_pairing_wifi_dont_see" = "I don't see my network";
+"bt_pairing_wifi_reset" = "Reset Router";
+"bt_pairing_wifi_unplug" = "Unplug the power cord from the wall (or the back of the router), wait 60 seconds, then plug it back in.";
+"bt_pairing_wifi_check_network" = "Check Network Type";
+"bt_pairing_wifi_24ghz" = "Ninja devices only connect to 2.4GHz networks. Make sure your 2.4GHz network is not hidden or turned off. If you have an app for your router, use it to unhide or turn on your 2.4GHz network. Alternatively, contact your internet service provider.";
+"bt_pairing_wifi_internet_issues" = "If you're having internet issues with other products in your home, contact your internet service provider.";
+"bt_pairing_wifi_network_tips" = "Network Tips";
+
+"bt_pairing_password_type" = "Type your network password";
+"bt_pairing_password_require" = " My network doesn't require a password";
+
+
+"bt_pairing_connecting_this_may" = "This may take a few minutes";
+"bt_pairing_connecting_please_keep" = "Please, keep this screen open and live until the connection has completed.";
+"bt_pairing_connecting_to_the" = "To The Dashboard";
+"bt_pairing_connecting_great" = "Great! Let's start cooking together.";
+"bt_pairing_connecting_one_reset" = "1. Reset your Grill";
+"bt_pairing_connecting_turn_off_grill" = "Turn off your Grill pressing the button";
+"bt_pairing_connecting_two_cycle" = "2. Cycle the Wi-Fi on your mobile device.";
+"bt_pairing_connecting_turn_off_wifi" = "Turn off Wi-Fi on your mobile device. Wait 10 seconds, then turn it back on and connect to your network.";
+"bt_pairing_connecting_three_reactivate" = "3. Reactivate Discovery Mode";
+"bt_pairing_connecting_after" = "After rebooting, press and hold the dial for 3-5 seconds on the Grill until you’re prompted, and the Wi-Fi indicator begins to flash.";
+"bt_pairing_connecting_one_forgot" = "1. Forgot password:";
+"bt_pairing_connecting_try_checking" = "Try checking the back of your router or contact someone who may know it.";
+"bt_pairing_connecting_two_server" = "2. Server Issue:";
+"bt_pairing_connecting_make_sure" = "Make sure your network is not a VPN or proxy server.";
+"bt_pairing_connecting_three_other" = "3. Other:";
+"bt_pairing_connecting_if_youre" = "If you’re having internet issues with other products in your home, contact your internet service provider.";
+"bt_pairing_connecting_wasnt_able" = "Looks like I wasn’t able to connect. Let's try something else!";
+"bt_pairing_connecting_still_not" = "Hmm... something is still not working. Don't worry! Here are some other things you can try.";
+
+
+// MENUBAR
+"menu_notifications_title" = "Turn on notifications?";
+"menu_notifications_info" = "You will receive real-time notifications about the status of your grill and cook.";
+"menu_notifications_yes" = "Yes, keep me informed!";
+"menu_notifications_no" = "I don't want to be notified";
+
+// COOK
+"precook_start_description" = "For this cook mode, you need to add the grill plate and the grease tray.";
+"precook_start_description_accessories" = "For this cook mode, you need to add all accessories.";
+"precook_start_description_confirm" = "the grill plate and the grease tray";
+"precook_header_monitor" = "Monitor Method";
+"precook_header_mode" = "Cook Mode";
+"precook_header_settings" = "Cook Settings";
+"precook_start_text" = "Start Cooking";
+"precook_start_offline" = "Grill Offline";
+// precook/monitor control vms - selector titles???
+"cook_toast_add_title" = "Add Food";
+"cook_toast_add_message" = "Your grill is preheated and read to go";
+"cook_toast_flip_title" = "Time to Flip";
+"cook_toast_flip_message" = "We're halfway through your cook";
+"cook_toast_remove_title" = "Remove Food";
+"cook_toast_remove_message" = "Thermometer #: Remove from the grill and allow it to rest. It will continue to cook with residual heat to reach the set temperature.";
+"cook_toast_close_title" = "Close Lid";
+"cook_toast_close_message" = "The cook will not continue until the lid is closed.";
+"cook_toast_connection_title" = "Connection Lost";
+"cook_toast_connection_message" = "Your appliance has lost its Wi-Fi connection. Ensure you have Wi-Fi turned on and that the appliance is within range.";
+"cook_modal_change_timed_title" = "Want to change to Timed Cook?";
+"cook_modal_change_timed_message" = "Your cook will complete when the timer runs out, rather than when your thermometers meet their target temperatures. You will lose your thermometer settings.";
+"cook_modal_change_timed_ok" = "Continue to Timed Cook";
+"cook_modal_change_probe_title" = "Want to set a thermometer?";
+"cook_modal_change_probe_message" = "You are about to change the cooking control type, you will have to add new settings. The grill will no longer operate on a timed setting.";
+"cook_modal_change_probe_ok" = "Yes, add a thermometer";
+"cook_modal_plugged_in_title" = "Thermometer not plugged in.";
+"cook_modal_plugged_in_description_first" = "Your first thermometer must be plugged in to track its readings.";
+"cook_modal_plugged_in_description_second" = "Your second thermometer must be plugged in to track its readings.";
+"cook_modal_ok" = "Okay";
+"cook_modal_probe_complete_title" = "Cook Complete";
+"cook_modal_probe_complete_description" = "Thermometer #: We’ve reached your set resting temperature.";
+"cook_modal_not_available_title" = "Not Supported";
+"cook_modal_not_available_description" = "Dehydrate and Broil cooking modes do not support thermometer cooking. Try changing the cook mode if you’d like to monitor thermometers.";
+"cook_header_probes" = "Thermometers";
+"cook_header_settings" = "Grill Settings";
+"cook_stop_text" = "Stop Cooking";
+"cook_stop_back" = "Back to Dashboard";
+"cook_settings_modal_back_title" = "Want go back?";
+"cook_settings_modal_back_description" = "All changes will be lost. Are you sure you want to discard them?";
+"cook_settings_modal_back_ok" = "Discard Changes";
+"cook_settings_modal_header_food" = "Food Selector";
+"cook_settings_modal_header_point" = "Cooking Point";
+"cook_settings_modal_header_cook" = "Cook Mode";
+"cook_settings_modal_header_time" = "Time to Cook";
+"cook_settings_modal_header_temperature" = "Grill Temperature";
+"cook_how_to_probe_title" = "How to place your thermometer?";
+"cook_how_to_probe_description" = "Insert the Built-In Thermometer into the thickest part of your protein while the grill is preheating.";
+"cook_charts_cell_title" = "Do you want help, Chef?";
+"cook_charts_cell_description" = "Our culinary team has developed cooking charts to guide you how to set your cook session successfully.";
+"cook_charts_cell_button" = "Go to cooking charts";
+
+
+// SETTINGS
+// General
+"settings_general_no_internet_connection" = "An internet connection is required to complete this task.";
+"settings_general_no_internet_please_retry" = "Please connect to the internet and try again.";
+"settings_general_alert_failure_title" = "Oops, something went wrong!";
+"settings_general_alert_failure_subtitle" = "The save attempt has failed. Try again?";
+
+"settings_landing_account_subtitle" = "Profile, Change Email, Log Out...";
+"settings_landing_your_appliance_subtitle" = "Appliance Detail, Warranty Information, Support...";
+"settings_landing_about_subtitle" = "Data Protections, Terms of Use, Privacy Policy...";
+"settings_landing_cooking_notifications" = "Cooking Notifications (push)";
+
+// Account
+"settings_account" = "Account";
+"settings_account_log_out" = "Log Out";
+"settings_account_log_out_confirm_title" = "Are you sure you want to log out?";
+
+"settings_account_change_email" = "Change Email";
+"settings_account_change_email_type_prompt" = "Type new email";
+"settings_account_change_email_confirm_prompt" = "Confirm new email";
+"settings_account_change_email_confirm_button" = "Update + Log Out";
+"settings_account_change_email_error_invalid" = "Please enter a valid email address.";
+"settings_account_change_email_error_suggestion" = "Did you mean %@?";
+"settings_account_change_email_error_no_match" = "Email must match.";
+
+"settings_account_change_password" = "Change Password";
+"settings_account_change_password_old" = "Old Password";
+"settings_account_change_password_new" = "New Password";
+"settings_account_change_password_placeholder" = "Type your password";
+"settings_account_change_password_confirm" = "Confirm New Password";
+"settings_account_change_password_prompt_uppercase" = "1 uppercase letter";
+"settings_account_change_password_prompt_lowercase" = "1 lowercase letter";
+"settings_account_change_password_prompt_character_count" = "8 or more characters";
+"settings_account_change_password_prompt_number" = "1 number";
+
+"settings_account_profile" = "Profile";
+"settings_account_profile_subtitle" = "Name, Address, Phone Number...";
+"settings_account_profile_field_required_explanation" = "(*) This field is required";
+"settings_account_profile_field_required_warning" = "Field Required";
+
+"settings_account_profile_first_name" = "First";
+"settings_account_profile_last_name" = "Last Name";
+"settings_account_profile_address_line_one" = "Address 1";
+"settings_account_profile_address_line_two" = "Address 2";
+"settings_account_profile_city" = "City";
+"settings_account_profile_state" = "State / Province";
+"settings_account_profile_postal_code" = "Zip Code";
+"settings_account_profile_phone_number" = "Phone Number";
+
+
+"settings_account_unsaved_changes_title" = "You have unsaved changes.";
+"settings_account_unsaved_changes_subtitle" = "Would you like to save?";
+"settings_account_save_changes" = "Save Changes";
+"settings_account_discard_changes" = "Discard Changes";
+
+"settings_account_delete_alert_failure_subtitle" = "There was an error deleting your account. Try again?";
+"settings_account_delete_prompt_title" = "Are you sure you want to delete your account?";
+"settings_account_delete_prompt_subtitle" = "This cannot be undone and may take a moment to complete.";
+"settings_account_delete_prompt_confirm_button" = "Delete my account";
+"settings_account_delete_farewell" = "Your account has been deleted! Hope to see you soon!";
+
+"settings_account_preferences" = "Preferences";
+"settings_account_preferences_weight_unit" = "Weight Unit";
+"settings_account_preferences_temperature_unit" = "Temperature Unit";
+"settings_account_preferences_pounds_label" = "Pounds (lbs)";
+"settings_account_preferences_grams_label" = "Grams (g)";
+"settings_account_preferences_kilograms_label" = "Kilograms (kg)";
+"settings_account_preferences_ounces_label" = "Ounces (oz)";
+
+// Appliance
+"settings_your_appliance" = "Your Appliance";
+"settings_appliance_add_appliance" = "Add Another Appliance";
+"settings_appliance_no_appliances" = "It seems like there's no appliance paired yet. You can add a new one and start monitoring your cooking sessions from your device.";
+
+"settings_appliance_detail" = "Appliance Detail";
+"settings_appliance_detail_dsn" = "DSN";
+"settings_appliance_detail_mac_address" = "Mac Address";
+"settings_appliance_detail_app_version" = "App Version";
+"settings_appliance_detail_firmware_version" = "Firmware Version";
+"settings_appliance_detail_error_log" = "Appliance Error Log";
+
+"settings_appliance_delete" = "Delete Appliance";
+"settings_appliance_delete_confirm_title" = "Are you sure you want to delete your appliance?";
+"settings_appliance_delete_confirm_subtitle" = "This cannot be undone and may take a moment to copmlete.";
+"settings_appliance_delete_error_title" = "Something Went Wrong";
+"settings_appliance_delete_error_subtitle" = "Please try again later.";
+
+"settings_appliance_restore" = "Restore Factory Settings";
+"settings_appliance_restore_confirm_title" = "Are you sure you want to reset your device to factory settings?";
+"settings_appliance_restore_confirm_subtitle" = "This cannot be undone and may take a moment to complete.";
+"settings_appliance_restore_error_subtitle" = "The restore attempt has failed. Try again?";
+
+"settings_appliance_warranty" = "Warranty Information";
+"settings_appliance_support" = "Support";
+
+// About
+"settings_about" = "About This App";
+"settings_about_data_protection" = "Data Protection";
+"settings_about_terms_of_use" = "Terms of Use";
+"settings_about_privacy_policy" = "Privacy Policy";
+"settings_about_privacy_sn_privacy_notice" = "SharkNinja's Privacy Notice";
+// TODO: Need final copy for privacy policy
+"settings_about_privacy_copy" =  "SharkNinja (“us” or “we”) collects personal information (e.g. email address and connected IP address) about you when you use this SharkClean App. We use your personal information to administer your account and to provide robotic vacuum related products and services you have requested from us. We may share the information collected with our affiliates and service providers.\n\nWhen you successfully login, the SharkClean App will generate an authorization token which is stored locally on your phone and is refreshed every time you use the SharkClean App. This token is only used to keep you logged into the app. For more details on how we use the collected information, please see:";
+"settings_about_legal_notice" = "Information / Legal Notice";
+
+// EXPLORE
+"explore_home_title" = "Timed Cooking Charts";
+"explore_home_subtitle" = "Our Ninja culinary team has developed cooking charts that will guide you toward a successful cook.";
+"explore_home_header" = "Popular Filter Groupings";
+
+"explore_filterSelection_title" = "Apply";
+"explore_filterSelection_bannerTitle" = "Try Woodfire flavor";
+"explore_filterSelection_bannerSubtitle" = "Add Rich, fully developed smokiness to any dish you make flavored by pellets.";
+"explore_filtersApplied_subtitle" = "Ninja culinary team has developed cooking charts to guide you how to set your cook session successfully.";
+"explore_filterBottomSheet_bottomLabel" = " When filtering by this option, the following cook mode will not be available: Broil";
+"explore_cookTime_lessThanFifteenMinutes" = "< 15 min";
+"explore_cookTime_fifteenToThirtyMinutes" = "15 - 30 min";
+"explore_cookTime_thirtyToSixtyMinutes" = "30 - 60 min";
+"explore_cookTime_sixtyToOneTwentyMinutes" = "60 - 120 min";
+"explore_cookTime_oneTwentyMinutesPlus" = "+120 min";
+"explore_foodSelectorFilter_subtitle" = "Select as much as you want";
+"explore_gallery_title" = "What are you thinking to %@ today?";
+"explore_gallery_subtitle" = "Choose the type of food available in cook mode selected.";
+"explore_chartPreperation_info" = "Here are the indications of Ninja culinary team to ensure the success of your cooking session";
+"explore_chartPreperation_prepItem" = "Preparation";
+"explore_chartPreperation_notes" = "Notes";
+"explore_chartPreperation_startCookingButton" = "Use this Chart";
+"explore_button_results" = "%@ Results";
+"explore_woodfireCell_toggleTitle" = "Woodfire Technology";
+"explore_filterTitle_allFilters" = "Filters";
+"explore_filterTitle_clearAllFilters" = "Clear All Filters";
+"mode" = "Mode";
+"time" = "Time";
+"food" = "Food";
+"woodfire_flavor_filter" = "Woodfire Flavor";
+"explore_viewNResults" = "View %@ Results";
+"explore_viewZeroResults" = "0 Results";
+"explore_chartAdjustmentView_title"= "Chart Adjustments";
+"explore_chartAdjustmentView_description" = "Times listed in these charts are based on the quantities defined. Please adjust time based on your own quantity of food.";
+
+"menu_review_title" = "How\'s your Ninja experience?";
+"menu_review_info" = "Tell us how we are doing.";
+"menu_sleazy_title" = "Sorry you\'re having trouble, would you like to visit the support section?";
+"menu_sleazy_yes" = "Go To Support";
+"menu_sleazy_no" = "Dismiss";

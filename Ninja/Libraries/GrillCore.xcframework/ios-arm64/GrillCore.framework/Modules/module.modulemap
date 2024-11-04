@@ -1,0 +1,11 @@
+framework module GrillCore {
+  umbrella header "grillcore.h"
+
+  export *
+  module * { export * }
+}
+
+module GrillCore.Swift {
+  header "GrillCore-Swift.h"
+  requires objc
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "smoker_porkshoulder_pork.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
